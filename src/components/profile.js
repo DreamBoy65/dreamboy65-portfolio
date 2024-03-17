@@ -5,6 +5,8 @@ import moment from "moment-timezone";
 import { useEffect, useState } from "react";
 import Git from "./git";
 import Npm from "./npm";
+import Skills from "./skills";
+import Graph from "./graph";
 
 export default function Profile() {
   const currentTime = moment().tz("Asia/Calcutta");
@@ -130,7 +132,10 @@ export default function Profile() {
           </div>
         </div>
         <div className="w-full border-[#2f1111] p-[15px] border rounded-2xl flex flex-col bg-[#000000AB] items-center justify-center">
-          hello
+          <Skills />
+        </div>
+        <div className="w-full border-[#2f1111] p-[15px] border rounded-2xl flex flex-col bg-[#000000AB] items-center justify-center">
+          <Graph />
         </div>
       </div>
     </div>

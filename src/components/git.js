@@ -21,7 +21,7 @@ export default function Git() {
   console.log(data);
 
   return (
-    <div className="w-full h-full flex flex-col gap-2">
+    <div className="w-full h-auto flex flex-col gap-2">
       <div className="w-full flex justify-center">
         <strong>{data.data?.login ?? "DreamBoy65"} ~ Github</strong>
       </div>
