@@ -2,7 +2,7 @@
 import { userAgentFromString } from "next/server";
 import { useEffect, useState } from "react";
 
-export default function Git() {
+export default function Git({}) {
   let [data, setData] = useState(null);
 
   useEffect(() => {
@@ -17,8 +17,6 @@ export default function Git() {
   if (!data) {
     return <span>Loading....</span>;
   }
-
-  console.log(data);
 
   return (
     <div className="w-full h-auto flex flex-col gap-2">

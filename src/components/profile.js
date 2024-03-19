@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 
@@ -30,10 +31,10 @@ export default function Profile() {
   }, []);
 
   return (
-    <div className="w-full h-full bgc flex md:flex-row md:p-[15px] flex-col gap-[25px] border-[#000000] p-[5px] overflow-auto">
+    <div className="w-full h-full bgc flex md:flex-row md:p-[15px] transition-transform delay-1000 flex-col gap-[25px] border-[#000000] p-[5px] overflow-auto">
       {/* {part 1} */}
 
-      <div className="w-full h-auto flex flex-col items-center gap-4">
+      <div className="w-full h-auto flex flex-col items-center gap-2 md:gap-4">
         <div className="w-full border-[#2f1111] p-[15px] border rounded-2xl flex md:flex-row flex-col bg-[#000000AB] items-center">
           <img
             src="/52-529591_anime-wallpapers-gothic-anime-wallpapers-hd.jpg"
@@ -83,37 +84,37 @@ export default function Profile() {
         </div>
 
         <div className="w-full p-[5px] rounded-2xl flex flex-row gap-1 justify-center">
-          <a href="">
+          <a href="https://discord.gg/YDrZejdWqR">
             <img
               src="/dis.png"
               className="w-[50px] h-[50px] p-2 border-[#2f1111] border bg-[#000000AB] rounded-2xl"
             />
           </a>
-          <a href="">
+          <a href="https://instagram.com/dream.keir">
             <img
               src="/insta.jpeg"
               className="w-[50px] h-[50px] p-2 border-[#2f1111] border bg-[#000000AB] rounded-2xl"
             />
           </a>
-          <a href="">
+          <a href="https://github.com/dreamboy65">
             <img
               src="/git.webp"
               className="w-[50px] h-[50px] p-2 border-[#2f1111] border bg-[#000000AB] rounded-2xl"
             />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/lucky-ab57b7283?utm_source=share">
             <img
               src="/link.png"
               className="w-[50px] h-[50px] p-2 border-[#2f1111] border bg-[#000000AB] rounded-2xl"
             />
           </a>
-          <a href="">
+          <a href="?side=blog">
             <img
               src="/blog.png"
               className="w-[50px] h-[50px] p-2 border-[#2f1111] border bg-[#000000AB] rounded-2xl"
             />
           </a>
-          <a href="">
+          <a href="https://youtube.com/@dreamy.luck.?sub_confirmation=1">
             <img
               src="/yt.png"
               className="w-[50px] h-[50px] p-2 border-[#2f1111] border bg-[#000000AB] rounded-2xl"
@@ -122,12 +123,12 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full h-auto items-center gap-4">
-        <div className="w-full flex flex-col justify-center gap-1">
+      <div className="flex flex-col w-full h-auto items-center gap-2 md:gap-4">
+        <div className="w-full flex flex-col md:flex-row justify-center gap-1">
           <div className="w-full border-[#2f1111] p-[15px] border rounded-2xl flex flex-row bg-[#000000AB] justify-center items-center">
             <Git />
           </div>
-          <div className="w-full border-[#2f1111] p-[15px] border rounded-2xl flex flex-row bg-[#000000AB]">
+          <div className="w-full border-[#2f1111] p-[15px] border rounded-2xl flex flex-row bg-[#000000AB] justify-center items-center">
             <Npm />
           </div>
         </div>
